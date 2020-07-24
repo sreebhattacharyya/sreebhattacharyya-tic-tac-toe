@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href = "style.css">
+    <title>
+        Tic Tac Toe
+    </title>
+</head>
+<body>
+    <header>
+
+        <h2>Welcome on the journey to the Red Planet!</h2>
+        <h3><img src = "astronaut-final.jpg" alt="Astronaut!" id = "astronaut">    Have fun with Tic-Tac-Toe   <img src = "robot.jpg" alt="Robot!" id = "robot" ></h3>
+    </header>
+    <main>
+        <div id = "selection_page">
+            <div id = "mode-select" class = "element-container">
+             <b>Select mode of playing:</b>
+                <div>
+                    <input type = "radio" id = "HvH" name = "mode-select" value = "HvH" required>
+                    <label for = "HvH">Compete against your fellow crew member</label>
+                </div>
+                <div>
+                    <input type = "radio" id = "AI" name = "mode-select" value = "AI">
+                    <label for = "AI">Compete against the computer</label>
+                </div>
+            </div>
+            <div class = "form-popup" id = "form-contain">
+                <form action = "/action_page.php" class="form-container" name = "player-form1">
+                    <h2>Player 1</h2>
+                    <div id = 'text' class = 'element-container'>
+                        <label for = "name"><b>Name:</b></label>
+                        <input type = "text" name = "name" required placeholder="Player 1" value = "Player 1">
+                    </div>
+                    <div id = "radio" class = "element-container">
+                        <b>Symbol:</b>
+                        <span>
+                            <input type = "radio" id = "X" name = "symbol" value = "X" checked>
+                            <label for = "X">x</label>
+                        </span>
+                        <span>
+                            <input type = "radio" id = "O" name = "symbol" value = "O">
+                            <label for = "O">o</label>
+                        </span>
+                    </div>
+                    <button type = "button" class = "submit_button" id = "sub1">Confirm</button>
+                </form>
+                <form action = "/action_page.php" class="form-container" name = "player-form2">
+                    <h2>Player 2</h2>
+                    <div id = "text" class = "element-container">
+                        <label for = "name"><b>Name:</b></label>
+                        <input type = "text" name = "name" required placeholder = "Player 2" value = "Player 2">
+                    </div>
+                    <div id = "radio" class = "element-container">
+                        <b>Symbol:</b>
+                        <span>
+                            <input type = "radio" id = "X" name = "symbol" value = "X">
+                            <label for = "X">x</label>
+                        </span>
+                        <span>
+                            <input type = "radio" id = "O" name = "symbol" value = "O" checked>
+                            <label for = "O">o</label>
+                        </span>
+                    </div>
+                    <button type = "button" class = "submit_button" id = "sub2">Confirm</button>
+                </form>
+            </div>
+                <div id = "select" class = "element-container">
+                    <h2>Choose a difficulty level:</h2>
+                    <div>
+                        <input type = "radio" id = "1" name = "select" value = "1">
+                        <label for = "1">Easy</label>
+                    </div>
+                    <div>
+                        <input type = "radio" id = "2" name = "select" value = "2">
+                        <label for = "2">Medium</label>
+                    </div>
+                    <div>
+                        <input type = "radio" id = "5" name = "select" value = "5" checked>
+                        <label for = "5">Difficult</label>
+                    </div>
+                </div>
+                <button type = "button" class = "start" id = "startgame" onclick = "displayController.startGame()">Start</button>
+        </div>
+        <div id = "gamepage">
+            <div id = "suggestion">
+                <button type = "button" id = "suggest-button" class = "suggest" onclick="displayController.suggest()">Show Suggestion</button>
+                <p id = "suggestion-message"></p>
+            </div>
+            <div id = "game-board">
+                <div class = "cell 0" id = "cell0"></div>
+                <div class = "cell 1" id = "cell1"></div>
+                <div class = "cell 2" id = "cell2"></div>
+                <div class = "cell 3" id = "cell3"></div>
+                <div class = "cell 4" id = "cell4"></div>
+                <div class = "cell 5" id = "cell5"></div>
+                <div class = "cell 6" id = "cell6"></div>
+                <div class = "cell 7" id = "cell7"></div>
+                <div class = "cell 8" id = "cell8"></div>
+            </div>
+            <div id = "result"></div>
+            <div id = "btn">
+                <button type = "button" class = "reset" onclick = "displayController.resetGame()">Reset</button>
+                <button type="button" class="goBack" onclick = "displayController.goBack()">Go Back</button>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src = "main.js"></script>
+</body>
+</html>

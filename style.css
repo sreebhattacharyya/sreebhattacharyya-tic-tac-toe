@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+*{box-sizing: border-box;}
+
+html
+{
+    height: 100%;
+}
+body
+{
+    text-align: justify;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFEFD5;
+}
+header
+{
+    height: 100%;
+}
+header h2
+{
+    text-align: center;
+    font-size: 60px;
+    font-family: Quicksand, sans-serif;
+}
+header h3
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: Quicksand, sans-serif;
+}
+#astronaut
+{
+
+    text-align: left;
+    height: 110px;
+    width: 120px;
+}
+#robot
+{
+
+    text-align: left;
+    height: 110px;
+    width: 120px;
+}
+main
+{
+    width: 100%;
+    height: 70%;
+}
+#mode-select
+{
+    font-family: Quicksand, sans-serif;
+}
+#selection_page
+{
+    display: block;
+    transition: ease-in 1s;
+
+}
+#form-contain
+{
+    display: flex;
+    flex-direction: row;
+}
+#select
+{
+    font-family: Quicksand, sans-serif;
+}
+.form-container
+{
+    width: 50%;
+    align-items: center;
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 10px;
+    border: 8px solid #82022c;
+    font-size: large;
+    font-family: Quicksand, sans-serif;
+}
+.form-container h2
+{
+    text-align: center;
+}
+.element-container
+{
+    margin: 10px 0px;
+}
+.submit_button
+{
+    box-sizing: border-box;
+    background-color: lightcoral;
+    margin: 10px 30%;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    margin-bottom: 10px;
+    font-family: Quicksand, sans-serif;
+
+}
+.disabled
+{
+    pointer-events: none;
+    opacity: 0.3;
+}
+.start
+{
+    width: 20%;
+    padding: 15px 15px;
+    font-family: Quicksand, sans-serif;
+    box-sizing: border-box;
+    background-color: lightcoral;
+    border: none;
+    cursor: pointer;
+    margin: 30px 40%;
+}
+#gamepage
+{
+    display: none;
+    margin-top: 70px;
+    height:100%;
+    transition: ease-in 1s;
+}
+#game-board
+{
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 700px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    gap: 0;
+}
+.cell
+{
+    height: 100%;
+    border: 12px solid #82022c;
+    padding: 20px 10%;
+    align-items: center;
+    justify-items: center;
+    font-size: 750%;
+    text-align: center;
+    background-color: white;
+}
+#result
+{
+    display: block;
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 40px;
+    padding: 2.5% 1%;
+    margin-bottom: 30px;
+    font-family: Quicksand, sans-serif;
+}
+#suggestion-message
+{
+    display: block;
+    width: 50%;
+    font-size: 15px;
+    padding: 2.5% 1%;
+    font-family: Quicksand, sans-serif;
+}
+#btn
+{
+    display: flex;
+    width: 50%;
+    margin: 0px auto;
+    transition: linear 0.2s;
+}
+.reset, .goBack
+{
+    width: 40%;
+    padding: 15px 15px;
+    font-family: Quicksand, sans-serif;
+    box-sizing: border-box;
+    background-color: lightcoral;
+    border: none;
+    cursor: pointer;
+    /*margin: 30px 40%;*/
+    margin-right: 10%;
+}
+.suggest
+{
+    width: 10%;
+    padding: 10px 10px;
+    font-family: Quicksand, sans-serif;
+    box-sizing: border-box;
+    background-color: lightcoral;
+    border: none;
+    cursor: pointer;
+    /*margin: 30px 40%;*/
+}
