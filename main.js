@@ -71,7 +71,7 @@ const displayController = ((doc) =>
             if(messageTarget.innerHTML === "")
             {
                 //case of displaying the suggestion
-                messageTarget.innerHTML = "Count left->right and top->bottom <br> Cell no."+(result+1);
+                messageTarget.innerHTML = "Count left->right and top->bottom <br> Cell no. "+(result+1);
                 but.innerHTML = "Hide Suggestion";
             }
             else
